@@ -1471,7 +1471,7 @@ function bp_activity_avatar( $args = '' ) {
 		$dn_default  = isset( $current_activity_item->display_name ) ? $current_activity_item->display_name : '';
 
 		// Prepend some descriptive text to alt
-		$alt_default = !empty( $dn_default ) ? sprintf( __( 'Profile picture of %s', 'buddypress' ), $dn_default ) : __( 'Profile picture', 'buddypress' );
+	  $alt_default = !empty( $dn_default ) ? sprintf( __( 'Profile picture of %s', 'buddypress' ), $dn_default ) : __( 'Profile picture', 'buddypress' );
 
 		$defaults = array(
 			'alt'     => $alt_default,
@@ -1783,9 +1783,10 @@ function bp_activity_action( $args = array() ) {
 		 * @param array $value Array containing the current action, the current activity, and the $args array passed into the function.
 		 */
 		$action = apply_filters_ref_array( 'bp_get_activity_action_pre_meta', array(
-			$activities_template->activity->action,
+		$activities_template->activity->action,
 			&$activities_template->activity,
 			$r
+			
 		) );
 
 		// Prepend the activity action meta (link, time since, etc...)
@@ -1804,6 +1805,7 @@ function bp_activity_action( $args = array() ) {
 			$action,
 			&$activities_template->activity,
 			$r
+			
 		) );
 	}
 
