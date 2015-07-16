@@ -1,0 +1,119 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2905620, 2014-10-20T13:04:37-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Gibson-LightIt by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/light-italic/
+ * 
+ * Webfont: Gibson-BoldItalic by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/bold-italic/
+ * 
+ * Webfont: Gibson-SemiboldIt by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/semi-bold-italic/
+ * 
+ * Webfont: Gibson-Bold by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/bold/
+ * 
+ * Webfont: Gibson-Regular by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/regular/
+ * 
+ * Webfont: Gibson-SemiBold by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/semi-bold/
+ * 
+ * Webfont: Gibson-Italic by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/italic/
+ * 
+ * Webfont: Gibson-Light by Canada Type
+ * URL: http://www.myfonts.com/fonts/canadatype/gibson/light/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2905620
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2011 Rod McDonald. Published by Canada Type. All rights reserved.
+ * 
+ * Â© 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/2c5614");
+
+  
+@font-face {font-family: 'Gibson-LightIt';src: url('webfonts/2C5614_0_0.eot');src: url('webfonts/2C5614_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_0_0.woff2') format('woff2'),url('webfonts/2C5614_0_0.woff') format('woff'),url('webfonts/2C5614_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-BoldItalic';src: url('webfonts/2C5614_1_0.eot');src: url('webfonts/2C5614_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_1_0.woff2') format('woff2'),url('webfonts/2C5614_1_0.woff') format('woff'),url('webfonts/2C5614_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-SemiboldIt';src: url('webfonts/2C5614_2_0.eot');src: url('webfonts/2C5614_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_2_0.woff2') format('woff2'),url('webfonts/2C5614_2_0.woff') format('woff'),url('webfonts/2C5614_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-Bold';src: url('webfonts/2C5614_3_0.eot');src: url('webfonts/2C5614_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_3_0.woff2') format('woff2'),url('webfonts/2C5614_3_0.woff') format('woff'),url('webfonts/2C5614_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-Regular';src: url('webfonts/2C5614_4_0.eot');src: url('webfonts/2C5614_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_4_0.woff2') format('woff2'),url('webfonts/2C5614_4_0.woff') format('woff'),url('webfonts/2C5614_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-SemiBold';src: url('webfonts/2C5614_5_0.eot');src: url('webfonts/2C5614_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_5_0.woff2') format('woff2'),url('webfonts/2C5614_5_0.woff') format('woff'),url('webfonts/2C5614_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-Italic';src: url('webfonts/2C5614_6_0.eot');src: url('webfonts/2C5614_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_6_0.woff2') format('woff2'),url('webfonts/2C5614_6_0.woff') format('woff'),url('webfonts/2C5614_6_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Gibson-Light';src: url('webfonts/2C5614_7_0.eot');src: url('webfonts/2C5614_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C5614_7_0.woff2') format('woff2'),url('webfonts/2C5614_7_0.woff') format('woff'),url('webfonts/2C5614_7_0.ttf') format('truetype');}*/
+
+@font-face {
+    font-family: 'Gibson-Regular';
+    src: url('../fonts/gibson-regular-webfont.eot');
+    src: url('../fonts/gibson-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gibson-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gibson-regular-webfont.woff') format('woff'),
+         url('../fonts/gibson-regular-webfont.ttf') format('truetype'),
+         url('../fonts/gibson-regular-webfont.svg#gibsonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gibson-Light';
+    src: url('../fonts/gibson-light-webfont.eot');
+    src: url('../fonts/gibson-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gibson-light-webfont.woff2') format('woff2'),
+         url('../fonts/gibson-light-webfont.woff') format('woff'),
+         url('../fonts/gibson-light-webfont.ttf') format('truetype'),
+         url('../fonts/gibson-light-webfont.svg#gibsonlightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gibson-SemiBold';
+    src: url('../fonts/gibson-bold-webfont.eot');
+    src: url('../fonts/gibson-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gibson-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gibson-bold-webfont.woff') format('woff'),
+         url('../fonts/gibson-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gibson-bold-webfont.svg#gibsonbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gibson-Italic';
+    src: url('../fonts/gibson-italic-webfont.eot');
+    src: url('../fonts/gibson-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gibson-italic-webfont.woff2') format('woff2'),
+         url('../fonts/gibson-italic-webfont.woff') format('woff'),
+         url('../fonts/gibson-italic-webfont.ttf') format('truetype'),
+         url('../fonts/gibson-italic-webfont.svg#gibsonitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ 
