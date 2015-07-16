@@ -247,13 +247,13 @@ do_action( 'bp_after_activity_entry' ); ?>
                                     <li>
                                     	<div class="rel_icon"><span style="color:#84c659;" class="icon-research-grants"></span></div>
                                         <div class="rel_title">
-                                            <a href="http://hd.demo.onevoice.world/rcurate/rarecurate-2/rarecurate-nih-research-grants/families-at-risk-long-term-impact-of-huntingtons-presymptomatic-genetic-testing/">Families At Risk: Long-Term Impact of Huntington Presymptomatic …</a>
+                                            <a href="http://hd.demo.onevoice.world/rcurate/rarecurate-2/rarecurate-nih-research-grants/families-at-risk-long-term-impact-of-huntingtons-presymptomatic-genetic-testing/">Families At Risk: Long-Term Impact of Huntington Presymptomatic</a>
                                         </div><div class="rel_source">Source: NIH RePORTER</div>
                                     </li>
                                     <li>
                                     	<div class="rel_icon"><span style="color:#fa9340;" class="icon-news-and-meetings"></span></div>
                                         <div class="rel_title">
-                                            <a target="_blank" href="http://www.dailyrecord.co.uk/news/real-life/five-brave-siblings-face-life-changing-5757932">Five brave siblings face life-changing blood tests to …</a>
+                                            <a target="_blank" href="http://www.dailyrecord.co.uk/news/real-life/five-brave-siblings-face-life-changing-5757932">Five brave siblings face life-changing blood tests to</a>
                                         </div><div class="rel_source">Source: dailyrecord.co.uk</div>
                                     </li>
                                     <li>
