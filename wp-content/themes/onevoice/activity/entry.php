@@ -230,9 +230,42 @@ do_action( 'bp_after_activity_entry' ); ?>
 <div class="col-sm-5">
                         	<div class="rare_flyout_open" style="height:478px;">
                             	<h1>rareRelated</h1>
-                                <ul class="rare-list">
+                                    <ul class="rare-list">
                                 	<li>
-                                    	<?php if ( dynamic_sidebar('rareRelated-sidebar') ) : else : endif; ?>
+                                    	<div class="rel_icon"><span style="color:#6e8fda;" class="icon-evidence-and-education"></span></div>
+                                        <div class="rel_title">
+                                            <a href="http://hd.demo.onevoice.world/rcurate/rarecurate-2/evidence-and-education/recommendations-for-the-predictive-genetic-test-in-huntingtons-disease/">Recommendations for the predictive genetic test in Huntington's disease.</a>
+                                        </div>
+                                        <div class="rel_source">Source: Clin Genet</div>
+                                    </li>
+                                    <li>
+                                    	<div class="rel_icon"><span style="color:#1daaee;" class="icon-experts"></span></div>
+                                        <div class="rel_title">
+                                            <a href="http://hd.demo.onevoice.world/rcurate/rarecurate-2/people-and-places/lauren-korty-ms/">Lauren Korty, MS</a>
+                                        </div><div class="rel_source">Source: Huntington's Disease Clinical Research Center, University of California , San Diego (UCSD) School of Medicine</div>
+                                    </li>
+                                    <li>
+                                    	<div class="rel_icon"><span style="color:#84c659;" class="icon-research-grants"></span></div>
+                                        <div class="rel_title">
+                                            <a href="http://hd.demo.onevoice.world/rcurate/rarecurate-2/rarecurate-nih-research-grants/families-at-risk-long-term-impact-of-huntingtons-presymptomatic-genetic-testing/">Families At Risk: Long-Term Impact of Huntington Presymptomatic …</a>
+                                        </div><div class="rel_source">Source: NIH RePORTER</div>
+                                    </li>
+                                    <li>
+                                    	<div class="rel_icon"><span style="color:#fa9340;" class="icon-news-and-meetings"></span></div>
+                                        <div class="rel_title">
+                                            <a target="_blank" href="http://www.dailyrecord.co.uk/news/real-life/five-brave-siblings-face-life-changing-5757932">Five brave siblings face life-changing blood tests to …</a>
+                                        </div><div class="rel_source">Source: dailyrecord.co.uk</div>
+                                    </li>
+                                    <li>
+                                    	<div class="rel_icon"><span style="color:#269fd9;" class="icon-clinical"></span></div>
+                                        <div class="rel_title">
+                                            <a href="http://hd.demo.onevoice.world/rclinical/family-health-after-predictive-huntington-disease-hd-testing/">Family Health After Predictive Huntington Disease (HD) Testing</a>
+                                        </div><div class="rel_source">Source: rareClinical</div>
+                                    </li>
+                                    <li>
+                                    	<div class="rel_icon"><span style="color:#237d76;" class="icon-videos-and-visuals"></span></div>
+                                        <div class="rel_title"><a class="various fancybox.iframe" href="https://www.youtube.com/embed/cptrFznN7cE">Genetic Testing for Huntington Disease</a></div>
+                                        <div class="rel_source">Source: HOPES (via YouTube)</div>
                                     </li>
                                 </ul>
                             </div>
