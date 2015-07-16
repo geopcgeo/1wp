@@ -15,7 +15,10 @@
 	?>
 
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<div class="cont-head">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/rareCourage-head.png" border="0"/>
+                    </div>
+		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
