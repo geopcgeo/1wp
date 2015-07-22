@@ -1,0 +1,134 @@
+
+
+.courage_post_foot_enc {
+    background-color: #1daaee;
+    background-image: url("images/care-chevron.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 29px;
+    padding: 4px 10px;
+    position: relative;
+	margin-bottom: 25px;
+	width:100px;
+	text-align:center;
+   
+}
+.courage_post_foot_enc_opts {
+    display: none;
+    height: 111px;
+    position: absolute;
+    right: -160px;
+    top: -35px;
+    width: 160px;
+	z-index:9999;
+}
+.enc_hug, .enc_thank, .enc_pray {
+    -moz-user-select: none;
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    line-height: 32px;
+    padding-left: 7px;
+    position: relative;
+}
+.enc_hug_ch, .enc_thank_ch, .enc_pray_ch {
+    border-color: #076591 transparent transparent;
+    border-style: solid;
+    border-width: 10px 5px 0;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 40px;
+    position: absolute;
+    width: 0;
+    z-index: 999;
+}
+.courage_post_foot_enc_opts .icon-prayers, .courage_post_foot_enc_opts .icon-thanks, .courage_post_foot_enc_opts .icon-hugs {
+    font-size: 16px;
+    line-height: 32px;
+}
+.enc_hug {
+    background-color: #84c659;
+}
+.enc_hug_ch {
+    border-color: #84c659 transparent transparent;
+    display: block;
+}
+.enc_hug:hover {
+    background-color: #b4ef8e;
+    color: #3e4c4a;
+}
+.enc_hug:hover > .enc_hug_ch {
+    border-color: #b4ef8e transparent transparent;
+}
+.enc_hug:hover > .icon-hugs {
+    color: #85c659;
+}
+.enc_thank {
+    background-color: #1ab19a;
+}
+.enc_thank_ch {
+    border-color: #1ab19a transparent transparent;
+    display: block;
+}
+.enc_thank:hover {
+    background-color: #45e1c9;
+    color: #3e4c4a;
+}
+.enc_thank:hover > .enc_thank_ch {
+    border-color: #45e1c9 transparent transparent;
+}
+.enc_thank:hover > .icon-thanks {
+    color: #1ab19a;
+}
+.enc_pray {
+    background-color: #1dd4d6;
+}
+.enc_pray_ch {
+    border-color: #1dd4d6 transparent transparent;
+    display: block;
+}
+.enc_pray:hover {
+    background-color: #7af3f4;
+    color: #3e4c4a;
+}
+.enc_pray:hover > .enc_pray_ch {
+    border-color: #7af3f4 transparent transparent;
+}
+.enc_pray:hover > .icon-prayers {
+    color: #1ab19a;
+}
+.courage_post_foot_enc:hover > .courage_post_foot_enc_opts {
+    display: block;
+}
+.enc_hug_num, .enc_thank_num, .enc_pray_num {
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    right: 16px;
+    text-align: right;
+    top: 0;
+    width: 60px;
+}
+.carebut {
+    font-size: 16px;
+    line-height: 20px;
+}
+.carebut sub {
+    font-size: 18px;
+    top: 2px;
+}
+.acomment-options .courage_post_foot_enc {
+    font-size: 13px;
+    line-height: 20px;
+	background:none;
+	color:#143b38;
+}
+.acomment-options .carebut {
+    font-size: 13px;
+    line-height: 16px;
+}
+.float-left{
+}
