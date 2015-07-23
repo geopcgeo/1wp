@@ -383,13 +383,16 @@ function createMarkup () {
 			'&nbsp;' +
 			'<a href="#links" class="bpfb_toolbarItem" title="' + l10nBpfb.add_links + '" id="bpfb_addLinks"><span>' + l10nBpfb.add_links + '</span></a>' +
 		'</div>' +
+		'<div class="bpfb_controls_custom">'+
 		'<div class="bpfb_controls_container">' +
 		'</div>' +
 		'<div class="bpfb_preview_container">' +
 		'</div>' +
 		'<div class="bpfb_action_container">' +
 		'</div>' +
+			
 		'<input type="button" id="bpfb_cancel_action" value="' + l10nBpfb.cancel + '" style="display:none" />' +
+		'</div>' +
 	'</div>';
 	$form.wrap('<div class="bpfb_form_container" />');
 	$textContainer.after(html);
@@ -479,4 +482,21 @@ $(".bpfb_final_link img").each(function () {
 });
 
 });
+
 })(jQuery);
+
+
+
+
+$(document).ready(function(){
+$('.bpfb_toolbarItem').click(function(){
+$('.bpfb_controls_custom').show();
+});
+
+
+$('#bpfb_cancel_action').click(function () {
+$(".bpfb_controls_custom").hide();
+});
+
+});
+

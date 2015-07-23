@@ -13,6 +13,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OneVoice Huntington</title>
 <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.css" rel="stylesheet">
@@ -65,10 +66,10 @@
         	<header id="branding">
             	<div class="content">
                 	<div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                         
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-9">
                             <ul class="head-nav">
                                 <li><?php global $current_user;
       get_currentuserinfo();
