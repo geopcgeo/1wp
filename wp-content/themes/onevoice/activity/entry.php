@@ -24,7 +24,7 @@ do_action( 'bp_before_activity_entry' ); ?>
                        
 <!-- <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">-->
 	   <div class="row courage_post">
-	    <div class="col-sm-5">
+	    <div class="col-sm-6">
 <div class="courage_post-box">
 <div class="courage_post-cont">	
 <div class="courage_post_head">
@@ -227,7 +227,7 @@ do_action( 'bp_after_activity_entry' ); ?>
 		</div>
 	</div>
 </div>
-<div class="col-sm-5">
+<div class="col-sm-6">
                         	<div class="rare_flyout_open" style="height:423px;">
                             	<h1>rareRelated</h1>
                                     <ul class="rare-list">

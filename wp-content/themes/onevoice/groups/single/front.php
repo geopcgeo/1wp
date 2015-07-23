@@ -42,7 +42,7 @@ do_action( 'bp_before_group_activity_post_form' ); ?>
 
 <?php if ( is_user_logged_in() && bp_group_is_member() ) : ?>
 					<div class="row">
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
 
                             	<div class="courage_post_form_container">
                                 	<div class="courage_post_form_box">

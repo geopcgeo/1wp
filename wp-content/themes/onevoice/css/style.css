@@ -557,7 +557,7 @@ span.highlight {
   width: 35px;}
 .courage_post_form_box #whats-new-avatar img{  width: auto;
   height: 100%;}
-.courage_post_form_box #whats-new-textarea textarea{  height: 25px;outline: none !important;}
+.courage_post_form_box #whats-new-textarea textarea{  height: 30px;outline: none !important;}
 .courage_post_form_box #whats-new-content{margin-left: 40px !important;}
 .courage_post_form_box #whats-new-options{position: absolute;right: 0px;bottom: -45px;}
 .courage_post_form_box #whats-new-submit input[type="submit"]{background: #1daaee !important;
@@ -588,4 +588,52 @@ span.highlight {
 .slide-right{width:25px; height:20px; background:url(../images/flyout-icon.png) no-repeat !important; z-index:9999;border:none !important; }
 .slideEffect{width:100%; display:block;visibility:visible; opacity:1; transition-delay:0s;}
 .bpfb_toolbar_container{padding-right:20px;}
-ul.rare-list li { padding: 10px 0 10px 44px !important;
+ul.rare-list li { padding: 10px 0 10px 44px !important;}
+.courage_comment_date{width:auto !important;}
+.bpfb_controls_custom{
+  position: relative;
+	background: #ffffff;
+	border: 1px solid #1daaee ;
+  height: auto;
+  display: none;
+  padding: 15px;
+  border-radius: 4px;min-width: 300px;margin-top: 15px;}
+
+.arrow_box {
+	
+}
+.bpfb_controls_custom:after, .bpfb_controls_custom:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bpfb_controls_custom:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.bpfb_controls_custom:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #1daaee ;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+#buddypress .courage_post_form_box form#whats-new-form textarea{
+height:30px ;}
+@media screen and (max-width:1124px) {
+    .courage_comment_content{width:70% !important;}
+	.acomment-options .courage_post_foot_enc{width:85px !important;}
+	ul.head-nav li{padding: 0 15px;}
+	.courage_post_foot_share{right: 0;width: 168px !important;}
+	.courage_post_foot_sub_talk a.acomment-reply {width: 90px;}
+}
+
+

@@ -102,17 +102,18 @@ function bplike_activity_button() {
 		$count_thanks=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and thanks='1'");		
 		$count_hugs=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and hugs='1'");		
 		$count_prayers=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and prayers='1'");
-		$count_cares=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and cares='1'");		
-		
+		$count_cares=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and cares='1'");				
 		$count_cared=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and cares='1' and userid='$uid'");		
-		$care=$count_thanks+$count_hugs+$count_prayers+$count_cared;
+		$care=$count_thanks+$count_hugs+$count_prayers+$count_cares;
 		?>
-			<div id="p1046_12_66" class="courage_post_foot_enc" >
+			<div class="courage_post_foot_enc" >
 					
-					<?php 	if($count_cares >0){	
+					<?php 
+						// ****************care****start**************
+					if($count_cares >0){	
 					if($count_cared >0){?>
 				<span class="cared_trigger" onclick="care(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> cared&nbsp;&nbsp;</span>&nbsp;
+					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub> - </sub> cared&nbsp;&nbsp;</span>&nbsp;
 					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
 					</span>
 				
@@ -121,7 +122,7 @@ function bplike_activity_button() {
 				{?>	
 
 				<span class="cared_trigger" onclick="care(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> care&nbsp;&nbsp;</span>&nbsp;
+				<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> care&nbsp;&nbsp;</span>&nbsp;
 					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
 					</span>			
 				<?php 
@@ -132,28 +133,32 @@ function bplike_activity_button() {
 					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> care&nbsp;&nbsp;</span>&nbsp;
 					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
 					</span>
-					<?php }?>
+					<?php }
+						// **************care****end****************	
+					?>
 					
 					<div class="courage_post_foot_enc_opts">
 									<?php
-								// *****************hugs *****************					
+				// *****************hugs *****************					
 
 				$count_huged=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and hugs='1' and userid='$uid'");		
 
 				if($count_hugs >0){
 				if($count_huged >0){?>
 				<div class="enc_hug enc_trigger" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);"id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<span class="icon-hugs"></span> + <span class="typechange">hugged</span>
+						<div class="care-comb"><span class="icon-hugs"></span><span class="minus">- </span><span class="typechange">hugged</span></div>	
 						<div class="enc_hug_num enc_val"><?php echo $count_hugs ?></div>
+						<span class="enc_hug_ch_h"></span>
 						</div>
 				
 				<?php }
 				else
 				{?>	
 
-<div class="enc_hug enc_trigger" id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<span class="icon-hugs"></span> + <span class="typechange">hugs</span>
+				<div class="enc_hug enc_trigger" id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
+						<div class="care-comb"><span class="icon-hugs"></span><span class="plus">+</span> <span class="typechange">hugs</span></div>	
 						<div class="enc_hug_num enc_val"><?php echo $count_hugs ?></div>
+						<span class="enc_hug_ch"></span>
 						</div>				
 				<?php }
 				}
@@ -161,13 +166,13 @@ function bplike_activity_button() {
 				{?>
 
 				<div class="enc_hug enc_trigger" id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<span class="icon-hugs"></span> + <span class="typechange">hugs</span>
+						<div class="care-comb"><span class="icon-hugs"></span> <span class="plus">+</span>  <span class="typechange">hugs</span></div>	
 						<div class="enc_hug_num enc_val">0</div>
+						<span class="enc_hug_ch"></span>
 						</div>	
 				<?php }
 
-				// *****************hugs end*****************
-			
+				// *****************hugs end*****************			
 				// *****************thanks*****************						
 			$count_thanked=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and thanks='1' and userid='$uid'");		
 
@@ -175,16 +180,18 @@ function bplike_activity_button() {
 			if($count_thanked >0){?>
 			
             <div class="enc_thank enc_trigger" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<span class="icon-thanks"></span> + <span class="typechange">thanked</span>
+			<div class="care-comb"><span class="icon-thanks"></span> <span class="minus"><span class="plus">+</span> </span> <span class="typechange">thanked</span></div>	
 			<div class="enc_thank_num enc_val"><?php echo $count_thanks ?></div>
+			<span class="enc_thank_ch_h"></span>
 			</div>				
 			<?php }
 			else
 			{?>	
 			
             <div class="enc_thank enc_trigger" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<span class="icon-thanks"></span> + <span class="typechange">thanks</span>
+			<div class="care-comb"><span class="icon-thanks"></span><span class="minus">-</span> <span class="typechange">thanks</span></div>	
 			<div class="enc_thank_num enc_val"><?php echo $count_thanks ?></div>
+			<span class="enc_thank_ch"></span>
 			</div>				
 			<?php }
 			}
@@ -192,192 +199,51 @@ function bplike_activity_button() {
 			{?>
 			
 			<div class="enc_thank enc_trigger" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<span class="icon-thanks"></span> + <span class="typechange">thanks</span>
+			<div class="care-comb"><span class="icon-thanks"></span> <span class="plus">+</span>  <span class="typechange">thanks</span></div>	
 			<div class="enc_thank_num enc_val">0</div>
+			<span class="enc_thank_ch"></span>
 			</div>	
 
 			<?php }
 
-   // *****************thanks end*****************	
-					
-
-  // *****************prayer*****************					
+			// *****************thanks end*************	
+			// *****************prayer*****************					
 			$count_prayered=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and prayers='1' and userid='$uid'");			 
 			if($count_prayers >0){
 			if($count_prayered >0){?>
 				
 			<div id="prayid_<?php echo $bp_care_id ?>" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<span class="icon-prayers"></span> + <span class="typechange">prayed</span>
-				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>				
+				<div class="care-comb"><span class="icon-prayers"></span><span class="minus">- </span><span class="typechange">prayed</span></div>	
+				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>		
+				<span class="enc_pray_ch_h" style="color: #076591;"></span>				
 				</div>
 			<?php }
 			else
 			{?>	
 
-<div id="prayid_<?php echo $bp_care_id ?>" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<span class="icon-prayers"></span> + <span class="typechange">prayers</span>
-				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>				
+			<div id="prayid_<?php echo $bp_care_id ?>" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
+				<div class="care-comb"><span class="icon-prayers"></span><span class="plus">+</span>  <span class="typechange">prayers</span></div>	
+				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>	
+				<span class="enc_pray_ch"></span>				
 				</div>			
 			<?php }
 			}
 			else
 			{?>
 
-	<div id="prayid_<?php echo $bp_care_id ?>" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<span class="icon-prayers"></span> + <span class="typechange">prayers</span>
-				<div class="enc_pray_num enc_val">0</div>				
+			<div id="prayid_<?php echo $bp_care_id ?>" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
+				<div class="care-comb"><span class="icon-prayers"></span> <span class="plus">+</span> <span class="typechange">prayers</span></div>	
+				<div class="enc_pray_num enc_val">0</div>		<span class="enc_pray_ch"></span>		
 				</div>			
 			<?php }
 
-   // *****************prayer end*****************	?>			
+			// *****************prayer end*****************	?>			
 					</div>
 				</div>
-	<?php
+			<?php
    
 				} 
-				else
-
-				{ 
-					$uid=get_current_user_id();
-		global $wpdb;
-		$count_thanks=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and thanks='1'");		
-		$count_hugs=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and hugs='1'");		
-		$count_prayers=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and prayers='1'");		
-		$care=$count_thanks+$count_hugs+$count_prayers;
-					
-		?>
-			<div id="p1046_12_66" class="courage_post_foot_enc" >
-									
-					<?php 	
-					if($count_cares >0){	
-					if($count_cared >0){
-						?>
-				<span class="cared_trigger" onclick="care(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> cared&nbsp;&nbsp;</span>&nbsp;
-					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
-					</span>
 				
-				<?php 
-				}
-				else
-				{?>	
-
-				<span class="cared_trigger" onclick="care(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> care&nbsp;&nbsp;</span>&nbsp;
-					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
-					</span>			
-				<?php 
-				}
-					
-				}
-					else
-					{
-						?>
-				    <span class="cared_trigger" onclick="care(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> care&nbsp;&nbsp;</span>&nbsp;
-					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
-					</span>
-					<?php 
-					}
-					
-								// *****************hugs *****************					
-
-				$count_huged=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and hugs='1' and userid='$uid'");		
-
-				if($count_hugs >0){
-				if($count_huged >0){?>
-				<div class="enc_hug enc_trigger" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<span class="icon-hugs"></span> + <span class="typechange">hugged</span>
-						<div class="enc_hug_num enc_val"><?php echo $count_hugs ?></div>
-						</div>
-				
-				<?php }
-				else
-				{?>	
-
-<div class="enc_hug enc_trigger" id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<span class="icon-hugs"></span> + <span class="typechange">hugs</span>
-						<div class="enc_hug_num enc_val"><?php echo $count_hugs ?></div>
-						</div>				
-				<?php }
-				}
-				else
-				{?>
-
-				<div class="enc_hug enc_trigger" id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<span class="icon-hugs"></span> + <span class="typechange">hugs</span>
-						<div class="enc_hug_num enc_val">0</div>
-						</div>	
-				<?php }
-
-				// *****************hugs end*****************
-			
-				// *****************thanks*****************						
-			$count_thanked=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and thanks='1' and userid='$uid'");		
-
-			if($count_thanks >0){
-			if($count_thanked >0){?>
-			
-            <div class="enc_thank enc_trigger" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<span class="icon-thanks"></span> + <span class="typechange">thanked</span>
-			<div class="enc_thank_num enc_val"><?php echo $count_thanks ?></div>
-			</div>				
-			<?php }
-			else
-			{?>	
-			
-            <div class="enc_thank enc_trigger" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<span class="icon-thanks"></span> + <span class="typechange">thanks</span>
-			<div class="enc_thank_num enc_val"><?php echo $count_thanks ?></div>
-			</div>				
-			<?php }
-			}
-			else
-			{?>
-			
-			<div class="enc_thank enc_trigger" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<span class="icon-thanks"></span> + <span class="typechange">thanks</span>
-			<div class="enc_thank_num enc_val">0</div>
-			</div>	
-
-			<?php }
-
-   // *****************thanks end*****************	
-					
-
-  // *****************prayer*****************					
-			$count_prayered=$wpdb->get_var("select COUNT(*) from wp_bp_activity_metausers where actid='$bp_care_id' and prayers='1' and userid='$uid'");			 
-			if($count_prayers >0){
-			if($count_prayered >0){?>
-				
-			<div id="prayid_<?php echo $bp_care_id ?>" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<span class="icon-prayers"></span> + <span class="typechange">prayed</span>
-				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>				
-				</div>
-			<?php }
-			else
-			{?>	
-
-<div id="prayid_<?php echo $bp_care_id ?>" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<span class="icon-prayers"></span> + <span class="typechange">prayers</span>
-				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>				
-				</div>			
-			<?php }
-			}
-			else
-			{?>
-
-	<div id="prayid_<?php echo $bp_care_id ?>" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<span class="icon-prayers"></span> + <span class="typechange">prayers</span>
-				<div class="enc_pray_num enc_val">0</div>				
-				</div>			
-			<?php }
-
-   // *****************prayer end*****************	?>			
-					</div>
-				</div>
-		<?php
-        }
 
         // Checking if there are users who like item.
         if ( isset ($users_who_like) ) {

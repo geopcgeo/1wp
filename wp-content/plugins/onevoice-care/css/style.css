@@ -130,5 +130,55 @@
     font-size: 13px;
     line-height: 16px;
 }
-.float-left{
+
+.enc_trigger{color:#ffffff;}
+.courage_post_foot_enc_opts .enc_trigger{text-align:left;}
+/*
+.courage_post_care .enc_hug:after {top: 100%;left: 20%;border: solid transparent;content: " ";height: 0;	width: 0;position: absolute;pointer-events: none;border-color: rgba(29, 170, 238, 0);border-top-color: #84c659;	border-width: 8px;	margin-left: -8px;z-index:9999;}
+.courage_post_care .enc_thank :after {top: 100%;left: 20%;border: solid transparent;content: " ";height: 0;	width: 0;position: absolute;pointer-events: none;border-color: rgba(29, 170, 238, 0);border-top-color: #1ab19a;	border-width: 8px;	margin-left: -8px;z-index:9999;}
+.courage_post_care .enc_pray :after{top: 100%;left: 20%;border: solid transparent;content: " ";height: 0;	width: 0;position: absolute;pointer-events: none;border-color: rgba(29, 170, 238, 0);border-top-color: #1dd4d6;	border-width: 8px;	margin-left: -8px;z-index:9999;}
+
+.enc_thank_ch {
+    border-color: #1ab19a transparent transparent;
+    display: block;
+}
+.enc_hug_ch, .enc_thank_ch, .enc_pray_ch {
+    border-color: #076591 transparent transparent;
+    border-style: solid;
+    border-width: 10px 5px 0;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 40px;
+    position: absolute;
+    width: 0;
+    z-index: 999;
+}*/
+.enc_hug_ch_h, .enc_thank_ch_h, .enc_pray_ch_h{
+    border-color: #076591 transparent transparent;
+    border-style: solid;
+    border-width: 10px 5px 0;
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 40px;
+    position: absolute;
+    width: 0;
+    z-index: 999;
+}
+.enc_pray_ch {
+    border-color: #1dd4d6 transparent transparent;
+    display: block;
+}
+.enc_hug_ch_h {
+    border-color: #018BCD transparent transparent;
+    display: block;
+}
+.enc_pray_ch_h {
+    border-color: #018BCD transparent transparent;
+    display: block;
+}
+.enc_thank_ch_h {
+    border-color: #018BCD transparent transparent;
+    display: block;
 }
