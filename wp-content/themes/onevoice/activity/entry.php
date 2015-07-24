@@ -228,7 +228,7 @@ do_action( 'bp_after_activity_entry' ); ?>
 	</div>
 </div>
 <div class="col-sm-6">
-                        	<div class="rare_flyout_open" style="height:423px;">
+                        	<div class="rare_flyout_open">
                             	<h1>rareRelated</h1>
                                     <ul class="rare-list">
                                 	<li>
