@@ -497,6 +497,14 @@ $('.bpfb_controls_custom').show();
 $('#bpfb_cancel_action').click(function () {
 $(".bpfb_controls_custom").hide();
 });
+$('#bpfb_cancel').live("click",function () {
+$(".bpfb_controls_custom").hide();
+});
 
+
+
+$('#bpfb_submit').live("click",function () {
+$(".bpfb_controls_custom").hide();
+});
 });
 

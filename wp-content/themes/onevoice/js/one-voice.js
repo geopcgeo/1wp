@@ -28,12 +28,12 @@ jQuery(document).ready(function(){
 			jQuery('.bpfb_actions_container').css('height','35px');
 			jQuery('.bpfb_actions_container').css('display','block');
 			//jQuery('.courage_make_post_actions').show(400,'swing');
-			
-			
-			
-			
+		
 		});
 		
+		jQuery('#whats-new-textarea #whats-new').focusout(function()  {
+			jQuery('#whats-new').css('height','30px');
+		});
 		
 		
 		/*jQuery('#whats-new').focusout(function()  {
@@ -46,5 +46,7 @@ jQuery(document).ready(function(){
 		jQuery(this).parents().eq(5).find('.rare_flyout_open').toggleClass('slideEffect');
 		//jQuery('#'+this.id+'_flyout').toggleClass('slideEffect');
 	});
+	
+	
 });
 
