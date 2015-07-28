@@ -173,7 +173,7 @@ do_action( 'bp_after_activity_entry' ); ?>
 
 				<?php if ( bp_activity_can_comment() ) : ?>
 
-					<a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( '<span class="icon-talk"></span> talk <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a>
+					<a href="<?php bp_activity_comment_link(); ?>" class="button acomment-reply bp-primary-action" id="acomment-comment-<?php bp_activity_id(); ?>"><?php printf( __( '<span class="icon-talk"></span> reply <span>%s</span>', 'buddypress' ), bp_activity_get_comment_count() ); ?></a>
 
 				<?php endif; ?></div>
                                         <div class="courage_post_foot_sub_share"><span class="icon-share-on-social"></span> <?php echo do_shortcode( '[LoginRadius_Share type="horizontal"]' ) ?></div>
