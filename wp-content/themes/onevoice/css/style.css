@@ -620,7 +620,7 @@ ul.rare-list li { padding: 10px 0 10px 44px !important;}
 
 #bpfb_link_preview_url{width:268px !important;}
 #bpfb_video_url{width:268px !important;}
-
+.courage_post_content iframe{width:100% !important;height:100% !important;}
 @media screen and (max-width:1124px) {
     .courage_comment_content{width:70% !important;}
 	.acomment-options .courage_post_foot_enc{width:85px !important;}
