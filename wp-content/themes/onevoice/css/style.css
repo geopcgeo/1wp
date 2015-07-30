@@ -1317,8 +1317,9 @@ span.bpfb_right{display:none !important;}
 span.bpfb_thumbnail_chooser_label{display:none !important;}
 .bpfb_preview_container iframe{width: 340px;height: auto;}
 .list-img-box {
-    margin-top: -25px;
+    margin-top: 18px;
     position: absolute;
+    top: 0;
 }
 
 
