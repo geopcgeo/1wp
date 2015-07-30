@@ -1311,7 +1311,10 @@ ul.new_member-list li {
 	clear: both;
 	min-height: 0px;
 }
+span.bpfb_left{display:none !important;}
+span.bpfb_right{display:none !important;}
 
+span.bpfb_thumbnail_chooser_label{display:none !important;}
 
 @media screen and (max-width:1124px) {
     .courage_comment_content{width:70% !important;}
