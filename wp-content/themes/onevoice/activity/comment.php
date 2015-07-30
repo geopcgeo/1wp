@@ -1,4 +1,5 @@
 <?php
+
 /**
  * BuddyPress - Activity Stream Comment
  *

@@ -181,6 +181,38 @@ add_action( 'widgets_init', 'onevoice_widgets_init' );
 
 
 
+add_action('init', 'evidance_education');
+function evidance_education() 
+{
+  $labels = array(
+    'name' => _x('Curate Evidance & Education', 'Onevoice'),
+    'singular_name' => _x('Evidance & Education', 'Onevoice'),
+    'add_new' => _x('Add New', 'Onevoice'),
+    'add_new_item' => __('Add New Evidance & Education'),
+    'edit_item' => __('Edit Evidance & Education'),
+    'new_item' => __('New Evidance & Education'),
+    'view_item' => __('View Evidance & Education'),
+    'search_items' => __('Search Evidance & Education'),
+    'not_found' =>  __('No Evidance & Education found'),
+    'not_found_in_trash' => __('No Evidance & Education found in Trash'), 
+    'parent_item_colon' => ''
+  );
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_ui' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'page',
+    'hierarchical' => false,
+    'menu_position' => 20,
+	'has_archive' => true,
+    'supports' => array('title','editor','excerpt','revisions')
+  ); 
+  register_post_type('evidance-education',$args);
+
+  register_taxonomy('evidance-categories', array('evidance-education'), array('hierarchical' => true, 'label' => _x('Categories', 'Onevoice'), 'singular_label' => _x('Category', 'Onevoice'), 'rewrite' => array('slug' => 'evidance-categories')));
+}
 
 	
 

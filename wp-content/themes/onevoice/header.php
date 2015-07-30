@@ -34,7 +34,7 @@
         </div>
         <div class="primary_nav">
         	<ul id="left-primary-menu" class="menu">
-                <li class="dashboard"> <a href="#"> dashboard </a> </li>
+                <li class="dashboard"> <a href="/dashboard"> dashboard </a> </li>
                 <li class="rarecourage active"> <a href="/groups/rarecourage/"> courage </a></li>
                 <li class="rarecurate "> <a href="#"> curate </a></li>
 				<li class="rareclinical "> <a href="#"> clinical </a></li>

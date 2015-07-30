@@ -1,9 +1,9 @@
 jQuery(document).ready(function(){
-	//jQuery.fn.toggleText = function(t1, t2){
-//	  if (this.text() == t1) this.text(t2);
-//	  else                   this.text(t1);
-//	  return this;
-//	};
+	jQuery.fn.toggleText = function(t1, t2){
+	if (this.text() == t1) this.text(t2);
+	else                   this.text(t1);
+	return this;
+	};
 	
 	jQuery('.curate_info_content .info_title').click(function() {
 	
@@ -21,7 +21,41 @@ jQuery(document).ready(function(){
 		jQuery(this).toggleClass('grey_bg');
 		jQuery(this).toggleClass('ee_blue_bg');
 	});
+	jQuery('.evidence-education-title a').click(function() {
+		jQuery(this).toggleClass('grey_bg');
+		jQuery(this).toggleClass('ee_blue_bg');
+		jQuery(this).children('.cl_indicator').toggleText('- hide', '+ show');
+	});
 	
+	
+	jQuery('.people-places-title a').click(function() {
+		jQuery(this).children('.cl_indicator').toggleText('- hide', '+ show');
+		jQuery(this).toggleClass('grey_bg');
+		jQuery(this).toggleClass('ee_lt_blue_bg');	
+	});
+	
+	
+	jQuery('.research-grants-title a').click(function() {
+		jQuery(this).children('.cl_indicator').toggleText('- hide', '+ show');
+		jQuery(this).toggleClass('grey_bg');
+		jQuery(this).toggleClass('ee_green_bg');	
+	});
+	
+	
+	jQuery('.news-meetings-title a').click(function() {
+		jQuery(this).children('.cl_indicator').toggleText('- hide', '+ show');
+		jQuery(this).toggleClass('grey_bg');
+		jQuery(this).toggleClass('ee_orange_bg');	
+	});
+		
+	jQuery('#input_status').focus(function() {
+			jQuery('#input_status').css("height",'100px');
+			jQuery('.courage_make_post').css('margin-bottom','30px');
+			jQuery('.courage_post_form_actions').css('height','50px');
+			jQuery('.courage_post_form_actions').css('display','block');
+			jQuery('.courage_make_post_actions').show(400,'swing');
+			
+		});
 	jQuery('#whats-new').focus(function() {
 			//jQuery('#input_status').css("height",'100px');
 			//jQuery('.courage_make_post').css('margin-bottom','30px');
@@ -47,6 +81,30 @@ jQuery(document).ready(function(){
 		//jQuery('#'+this.id+'_flyout').toggleClass('slideEffect');
 	});
 	
+$('.lr_horizontal_share').click(function(){        
+        var i=1;
+        $('.lr').children('.lrc').each(function(index,element) {       
+            if($('div.lrc:nth-child('+i+')').html().match("Facebook")){             
+                $('div.lrc:nth-child('+i+')').addClass('shw');
+            }else if($('div.lrc:nth-child('+i+')').html().match("GooglePlus")){
+                $('div.lrc:nth-child('+i+')').addClass('shw');
+            }else if($('div.lrc:nth-child('+i+')').html().match("LinkedIn")){
+                $('div.lrc:nth-child('+i+')').addClass('shw');
+            }else if($('div.lrc:nth-child('+i+')').html().match("Twitter")){
+                $('div.lrc:nth-child('+i+')').addClass('shw');
+            }else if($('div.lrc:nth-child('+i+')').html().match("Pinterest")){
+                $('div.lrc:nth-child('+i+')').addClass('shw');
+            }else if($('div.lrc:nth-child('+i+')').html().match("Email")){
+                $('div.lrc:nth-child('+i+')').addClass('shw');
+            } 
+            else{
+               // $('.lrc:nth-child('+i+')').remove();
+            }           
+            i++;
+            $('.lrc').hide();
+            $('.shw').show();
+    });
+     });
 	
 });
 
