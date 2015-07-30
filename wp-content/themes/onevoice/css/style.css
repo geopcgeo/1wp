@@ -1192,7 +1192,7 @@ ul.rare-list li { padding: 10px 0 10px 44px !important;}
   height: auto;
   display: none;
   padding: 15px;
-  border-radius: 2px;min-width: 300px;margin-top: 5px;float: left;}
+  border-radius: 2px;width: 400px;margin-top: 5px;float: left;}
   
  .bpfb_controls_custom  input[type="button"] { 
     background:#10ac96 !important; color:#ffffff !important; border:none !important;
@@ -1315,6 +1315,7 @@ span.bpfb_left{display:none !important;}
 span.bpfb_right{display:none !important;}
 
 span.bpfb_thumbnail_chooser_label{display:none !important;}
+.bpfb_preview_container iframe{width: 340px;height: auto;}
 
 @media screen and (max-width:1124px) {
     .courage_comment_content{width:70% !important;}
