@@ -241,7 +241,7 @@ if($post_type=='evidance-education') {
                                     <div class="dash-well">
                                         <div class="right-col-title">suggestions</div>
                                         <div class="suggestions-box">
-                                      <?php echo do_shortcode('[contact-form-7 id="150" title="Contact form 1"]'); ?>
+                                      <?php echo do_shortcode('[contact-form-7 id="151" title="Dashboard Contact"]'); ?>
                                         
                                             <div class="clear"></div>
                                         </div>
