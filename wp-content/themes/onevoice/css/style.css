@@ -1192,7 +1192,7 @@ ul.rare-list li { padding: 10px 0 10px 44px !important;}
   height: auto;
   display: none;
   padding: 15px;
-  border-radius: 2px;width: 400px;margin-top: 5px;float: left;}
+  border-radius: 2px;width: 400px;margin-top: 5px;float: left;overflow:scroll;}
   
  .bpfb_controls_custom  input[type="button"] { 
     background:#10ac96 !important; color:#ffffff !important; border:none !important;
