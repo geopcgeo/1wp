@@ -170,15 +170,15 @@ if($post_type=='evidance-education') {
                                                       <span style="font-size:13px;">Source: Facebook.com</span>
 													 </div>
                                                 </li>
-                                                <li>
+                                                <li>	<div class="list-img-box">
                                                 	  <a href="#">Huntington's Disease Clinical Research support</a>
                                                       <br>
-                                                      <span style="font-size:13px;">Source: Twitter</span>
+                                                      <span style="font-size:13px;">Source: Twitter</span> </div>
                                                 </li>
-                                                <li>
+                                                <li>	<div class="list-img-box">
                                                 	  <a href="#">Huntington's Disease Clinical Research support</a>
                                                       <br>
-                                                      <span style="font-size:13px;">Source: Wordpress</span>
+                                                      <span style="font-size:13px;">Source: Wordpress</span> </div>
                                                 </li>
                                             </ul>
                                         </div>

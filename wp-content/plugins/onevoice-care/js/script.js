@@ -13,10 +13,10 @@ function thanks(bplikeid,uid){
 				var value2 =arrayOfStrings[1];
 				var value3 =arrayOfStrings[2];
 				if(value1 > 0){			
-				$('#fetchid_'+bplikeid).html('<span class="icon-thanks"></span> <span class="typechange" >&nbsp;thanked</span><div class="enc_thank_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_thank_ch_h"></span>');	
+				$('#fetchid_'+bplikeid).html('<span class="icon-thanks"></span> <span class="typechange" >thanked</span><div class="enc_thank_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_thank_ch_h"></span>');	
 				$('#fetchid_'+bplikeid).css({"background-color": "rgb(1, 139, 205)","color": "rgb(62, 76, 74)"});			
 				}else{
-				$('#fetchid_'+bplikeid).html('<span class="icon-thanks"></span> + <span class="typechange">thanks</span><div class="enc_thank_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_thank_ch"></span>');
+				$('#fetchid_'+bplikeid).html('<span class="icon-thanks"></span><span class="plus">+</span><span class="typechange">thanks</span><div class="enc_thank_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_thank_ch"></span>');
 				$('#fetchid_'+bplikeid).css({"background-color": "","color": ""});
 				}
 				$('#careid_'+bplikeid).html($.trim(value3));
@@ -41,11 +41,11 @@ function thanks(bplikeid,uid){
 				var value2 =arrayOfStrings[1];
 				var value3 =arrayOfStrings[2];
 				if(value1 > 0){
-				$('#hugid_'+bplikeid).html('<span class="icon-hugs"></span><span class="typechange">&nbsp;&nbsp;hugged</span><div class="enc_hug_num enc_val">'+$.trim(value2)+'</div><span class="enc_hug_ch_h"></span>');					
+				$('#hugid_'+bplikeid).html('<span class="icon-hugs"></span><span class="typechange">hugged</span><div class="enc_hug_num enc_val">'+$.trim(value2)+'</div><span class="enc_hug_ch_h"></span>');					
 				$('#hugid_'+bplikeid).css({"background-color": "rgb(1, 139, 205)","color": "rgb(62, 76, 74)"});
 				}else{
-				$('#hugid_'+bplikeid).html('<span class="icon-hugs"></span> + <span class="typechange">hugs</span><div class="enc_hug_num enc_val">'+$.trim(value2)+'</div><span class="enc_hug_ch"></span>');	
-				$('#hugid_'+bplikeid).html('<span class="icon-hugs"></span> + <span class="typechange">hugs</span><div class="enc_hug_num enc_val">'+$.trim(value2)+'</div><span class="enc_hug_ch"></span>');	
+				$('#hugid_'+bplikeid).html('<span class="icon-hugs"></span> <span class="plus">+</span> <span class="typechange">hugs</span><div class="enc_hug_num enc_val">'+$.trim(value2)+'</div><span class="enc_hug_ch"></span>');	
+				$('#hugid_'+bplikeid).html('<span class="icon-hugs"></span> <span class="plus">+</span><span class="typechange">hugs</span><div class="enc_hug_num enc_val">'+$.trim(value2)+'</div><span class="enc_hug_ch"></span>');	
 				$('#hugid_'+bplikeid).css({"background-color": "","color": ""});
 				}
 				$('#careid_'+bplikeid).html($.trim(value3));
@@ -68,10 +68,10 @@ function thanks(bplikeid,uid){
 				var value2 =arrayOfStrings[1];
 				var value3 =arrayOfStrings[2];
 				if(value1 > 0){
-				$('#prayid_'+bplikeid).html('<span class="icon-prayers"></span>  <span class="typechange">&nbsp;&nbsp;prayed</span><div class="enc_pray_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_pray_ch_h"></span>			');					
+				$('#prayid_'+bplikeid).html('<span class="icon-prayers"></span><span class="typechange">prayed</span><div class="enc_pray_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_pray_ch_h"></span>			');					
 				$('#prayid_'+bplikeid).css({"background-color": "rgb(1, 139, 205)","color": "rgb(62, 76, 74)"});
 				}else{			
-				$('#prayid_'+bplikeid).html('<span class="icon-prayers"></span> + <span class="typechange">prayers</span><div class="enc_pray_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_pray_ch"></span>');
+				$('#prayid_'+bplikeid).html('<span class="icon-prayers"></span><span class="plus">+</span><span class="typechange">prayers</span><div class="enc_pray_num enc_val">'+$.trim(value2)+'</div>	<span class="enc_pray_ch"></span>');
 				$('#prayid_'+bplikeid).css({"background-color": "","color": ""});
 
 				}				

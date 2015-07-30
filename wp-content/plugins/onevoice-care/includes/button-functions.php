@@ -130,7 +130,7 @@ function bplike_activity_button() {
 					}else{
 						?>
 				    <span class="cared_trigger" onclick="care(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><sub>+</sub> care&nbsp;&nbsp;</span>&nbsp;
+					<span class="carebut" id="caredid_<?php echo $bp_care_id ?>"><span class="plus">+</span> care&nbsp;&nbsp;</span>&nbsp;
 					<span class="enc_counter" id="careid_<?php echo $bp_care_id ?>" ><?php echo $care ;?></span>
 					</span>
 					<?php }
@@ -146,7 +146,7 @@ function bplike_activity_button() {
 				if($count_hugs >0){
 				if($count_huged >0){?>
 				<div class="enc_hug enc_trigger" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);"id="hugid_<?php echo $bp_care_id ?>" onClick="hugs(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-						<div class="care-comb"><span class="icon-hugs"></span><span class="typechange">&nbsp;&nbsp;hugged</span></div>	
+						<div class="care-comb"><span class="icon-hugs"></span><span class="typechange">hugged</span></div>	
 						<div class="enc_hug_num enc_val"><?php echo $count_hugs ?></div>
 						<span class="enc_hug_ch_h"></span>
 						</div>
@@ -180,7 +180,7 @@ function bplike_activity_button() {
 			if($count_thanked >0){?>
 			
             <div class="enc_thank enc_trigger" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" onClick="thanks(<?php echo $bp_care_id ?>,<?php echo $uid ?>)" id="fetchid_<?php echo $bp_care_id ?>">
-			<div class="care-comb"><span class="icon-thanks"></span> <span class="typechange">&nbsp;thanked</span></div>	
+			<div class="care-comb"><span class="icon-thanks"></span> <span class="typechange">thanked</span></div>	
 			<div class="enc_thank_num enc_val"><?php echo $count_thanks ?></div>
 			<span class="enc_thank_ch_h"></span>
 			</div>				
@@ -213,7 +213,7 @@ function bplike_activity_button() {
 			if($count_prayered >0){?>
 				
 			<div id="prayid_<?php echo $bp_care_id ?>" style="color: rgb(62, 76, 74); background-color: rgb(1, 139, 205);" class="enc_pray enc_trigger" onClick="pray(<?php echo $bp_care_id ?>,<?php echo $uid ?>)">
-				<div class="care-comb"><span class="icon-prayers"></span><span class="typechange">&nbsp;&nbsp;prayed</span></div>	
+				<div class="care-comb"><span class="icon-prayers"></span><span class="typechange">prayed</span></div>	
 				<div class="enc_pray_num enc_val"><?php echo $count_prayers ?></div>		
 				<span class="enc_pray_ch_h" style="color: #076591;"></span>				
 				</div>

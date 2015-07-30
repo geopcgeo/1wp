@@ -1316,6 +1316,12 @@ span.bpfb_right{display:none !important;}
 
 span.bpfb_thumbnail_chooser_label{display:none !important;}
 .bpfb_preview_container iframe{width: 340px;height: auto;}
+.list-img-box {
+    margin-top: -25px;
+    position: absolute;
+}
+
+
 
 @media screen and (max-width:1124px) {
     .courage_comment_content{width:70% !important;}

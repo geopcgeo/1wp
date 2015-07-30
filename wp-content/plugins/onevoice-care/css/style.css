@@ -182,3 +182,10 @@
     border-color: #018BCD transparent transparent;
     display: block;
 }
+.enc_trigger span.typechange{margin-left:15px;}
+.enc_trigger span.plus{position:absolute;left:28px;}
+
+.icon-hugs{width:20px; display:block;float:left;}
+.icon-thanks{width:20px; display:block;float:left;}
+.icon-prayers{width:20px; display:block;float:left;}
+
