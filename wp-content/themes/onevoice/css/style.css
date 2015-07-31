@@ -1128,10 +1128,10 @@ span.highlight {
 .courage_post_foot_sub_talk a.acomment-reply .icon-talk + span{display:none!important;}
 .courage_comments .ac-form{float:left;position:relative;width:100%;}
 .ac-reply-avatar{position:absolute; left:15px; top:15px;}
-.ac-reply-content{float: left;width: 100%;}
+.ac-reply-content{float: left;width: 90%;}
 .ac-textarea{float: left;width: 100%;padding: 10px;}
 .ac-textarea textarea{padding-left:60px; height:80px;width:100%;}
-.ac-reply-content{}
+
 
 .courage_comments input[type="submit"]{  float: right;
   margin-right: 10px;
@@ -1215,6 +1215,7 @@ ul.rare-list li { padding: 10px 0 10px 44px !important;}
 
 #bpfb_link_preview_url{width:268px !important;}
 #bpfb_video_url{width:268px !important;}
+#buddypress div.activity-comments{margin:0px !important;width:100% !important;}
 
 
 .courage_post_content iframe{width:100% !important;height:450px !important;}
