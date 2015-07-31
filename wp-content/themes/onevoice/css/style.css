@@ -1322,7 +1322,13 @@ span.bpfb_thumbnail_chooser_label{display:none !important;}
     position: absolute;
     top: 0;
 }
-
+div#TB_secondLine {
+    display: none !important;
+}
+span.screen-reader-text {
+    display: none !important;
+}
+#TB_window img#TB_Image{border:none !important;}
 
 
 @media screen and (max-width:1124px) {
