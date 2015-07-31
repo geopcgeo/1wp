@@ -22,7 +22,7 @@
 do_action( 'bp_before_activity_entry' ); ?>
             
                        
-<!-- <li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">-->
+ 
 	   <div class="row courage_post">
 	    <div class="col-sm-6">
 <div class="courage_post-box">
@@ -32,7 +32,7 @@ do_action( 'bp_before_activity_entry' ); ?>
 <div class="courage_post_related"><input type="button" id="slide-right-btn" class="slide-right"/></div>
 
 
-		    <div class="courage_post_head_img">
+		    <div class="courage_post_head_img activity-avatar">
                                     <?php bp_activity_avatar(); ?>
                                     </div>
 <?php// bp_activity_user_link(); ?>
@@ -77,7 +77,7 @@ echo $action = bp_insert_activity_meta( $action );
 
 		<?php if ( bp_activity_has_content() ) : ?>
 
-			<div class="courage_post_content">
+			<div class="courage_post_content activity-inner">
 
 				<?php bp_activity_content_body(); ?>
 
@@ -98,7 +98,7 @@ echo $action = bp_insert_activity_meta( $action );
 
 	<?php if ( ( bp_activity_get_comment_count() || bp_activity_can_comment() ) || bp_is_single_activity() ) : ?>
 
-		<div class="courage_comments">
+		<div class="courage_comments activity-comments">
 	
 			<?php bp_activity_comments(); ?>
 
@@ -142,19 +142,7 @@ echo $action = bp_insert_activity_meta( $action );
 	 * @since BuddyPress (1.2.0)
 	 */
 	do_action( 'bp_after_activity_entry_comments' ); ?>
-
-</div>
-
-
-<?php
-
-/**
- * Fires after the display of an activity entry.
- *
- * @since BuddyPress (1.2.0)
- */
-do_action( 'bp_after_activity_entry' ); ?>
-		<div class="courage_post_footer">
+	<div class="courage_post_footer">
                                 	<div class="courage_post_care">
                                     	<span class="cared_trigger">
                                         	<span class="carebut"><?php
@@ -227,6 +215,20 @@ do_action( 'bp_after_activity_entry' ); ?>
 		</div>
 	</div>
 </div>
+
+
+</div>
+
+
+<?php
+
+/**
+ * Fires after the display of an activity entry.
+ *
+ * @since BuddyPress (1.2.0)
+ */
+do_action( 'bp_after_activity_entry' ); ?>
+	
 <div class="col-sm-6">
                         	<div class="rare_flyout_open">
                             	<h1>rareRelated</h1>
