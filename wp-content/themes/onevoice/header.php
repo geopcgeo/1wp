@@ -55,8 +55,7 @@
             <a style="font-weight:600;" href="http://onevoice.world/the-team/">team</a>
             <a style="font-weight:600;" href="http://onevoice.world/faqs/">FAQ</a>
             <br>
-            <a href="http://onevoice.world/terms/">support</a>
-              •  
+            <a href="http://onevoice.world/terms/">support</a>&nbsp;&nbsp;<strong>&middot;</strong>&nbsp;&nbsp;
             <a href="http://onevoice.world/privacy/">legal</a>
             <br>
             <a style="font-size:10px;" href="/client-dashboard/">client Dashboard</a>

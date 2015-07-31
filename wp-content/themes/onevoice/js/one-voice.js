@@ -62,11 +62,13 @@ jQuery(document).ready(function(){
 			jQuery('.bpfb_actions_container').css('height','35px');
 			jQuery('.bpfb_actions_container').css('display','block');
 			//jQuery('.courage_make_post_actions').show(400,'swing');
+			//jQuery('.courage_post_form_box .bpfb_actions_container').css('right','80px');
 		
 		});
 		
 		jQuery('#whats-new-textarea #whats-new').focusout(function()  {
 			jQuery('#whats-new').css('height','30px');
+			//jQuery('.courage_post_form_box .bpfb_actions_container').css('right','-20px');
 		});
 		
 		

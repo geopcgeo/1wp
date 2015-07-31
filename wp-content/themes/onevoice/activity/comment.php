@@ -29,10 +29,9 @@ do_action( 'bp_before_activity_comment' ); ?>
 		</a>
 	</div>
 <div class="courage_comment_content">
-	
 	<?php
 		/* translators: 1: user profile link, 2: user name, 3: activity permalink, 4: activity timestamp */
-		printf( __( '<a href="%1$s">%2$s</a>'.' >', 'buddypress' ), bp_get_activity_comment_user_link(), bp_get_activity_comment_name(), bp_get_activity_comment_permalink(), bp_get_activity_comment_date_recorded() );
+		printf( __( '<a href="%1$s">%2$s></a>'.' ', 'buddypress' ), bp_get_activity_comment_user_link(), bp_get_activity_comment_name(), bp_get_activity_comment_permalink(), bp_get_activity_comment_date_recorded() );
 		?>
 	<div class="courage_comment_date">
 		<?php
@@ -41,8 +40,8 @@ do_action( 'bp_before_activity_comment' ); ?>
 		?>
 	</div>
 
-	<?php bp_activity_comment_content(); ?></div>
-
+	<?php bp_activity_comment_content(); ?>
+	
 	<div class="acomment-options">
 
 	<!--	<?php if ( is_user_logged_in() && bp_activity_can_comment_reply( bp_activity_current_comment() ) ) : ?>
@@ -67,6 +66,8 @@ do_action( 'bp_before_activity_comment' ); ?>
 		do_action( 'bp_activity_comment_options' ); ?>
 
 	</div>
+	</div>
+
 
 	<?php bp_activity_recurse_comments( bp_activity_current_comment() ); ?>
 	

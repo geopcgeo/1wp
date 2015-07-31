@@ -35,7 +35,7 @@ main {
 	font-size: 17px;
 	left: 0;
 	position: fixed;
-	top: 0;
+	top:20px;
 	width: 132px;
 	z-index: 700;
 	height: 100%;
@@ -412,11 +412,13 @@ ul.head-nav li:last-child {
 	line-height: 18px;
 	padding: 5px 10px;
 }
+.courage_comment_content p{margin-top: 0px !important; text-indent: 10;}
+.courage_comment_content a{float:left;}
 .courage_comment_content a:link, .courage_comment_content a:visited {
 	color: #1ab19a;
 	text-decoration: none;
 }
-.courage_comments {
+.courage_comments.activity-comments {
 	background-color: #fff;
 	padding-bottom: 5px;
 	float: left;
@@ -428,6 +430,7 @@ ul.head-nav li:last-child {
 	padding-top: 0px;
 	clear: both;
 	padding-top: 5px;
+	padding-left: 10px;
 }
 .courage_comment_user_photo {
 	width: 45px;
@@ -439,7 +442,9 @@ ul.head-nav li:last-child {
 	float: left;
 	font-size: 13px;
 	line-height: 18px;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
+	position:relative;
+	    margin-bottom: 12px;
 }
 .courage_comment_meta {
 	padding-top: 5px;
@@ -451,6 +456,9 @@ ul.head-nav li:last-child {
 	float: right;
 	font-size: 10px;
 	color: #bfc4c9;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 .courage_post_footer {
 	height: 34px;
@@ -501,7 +509,7 @@ ul.head-nav li:last-child {
 }
 .courage_post_care:after {
 	top: 100%;
-	left: 50%;
+	left: 70%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -1109,7 +1117,7 @@ span.highlight {
 .courage_post_form_container .activity-greeting{display:none;}
 .courage_post_content{padding:5px 10px;}
 .courage_post-box{background:#ffffff;float:left;width:100%}
-.courage_post_head_text a.activity-time-since {font-size: 15px !important;line-height: 18px !important;padding: 5px 10px !important;color:#bfc4c9 !important;font-weight:normal !important;}
+.courage_post_head_text a.activity-time-since {font-size: 15px !important;line-height: 18px !important;padding: 0px 10px !important;color:#bfc4c9 !important;font-weight:normal !important;font-family: "Gibson-Regular";}
 .courage_comments ul{padding:0px;}
 .courage_comments .courage_comment_user_photo{margin-right:15px;}
 .courage_comments .courage_comment_user_photo img{width:100%;}
@@ -1117,7 +1125,7 @@ span.highlight {
 .courage_post_head_text a.activity-time-since{width:100%; float:left;color: #bfc4c9; font-weight:normal  !important;
     font-size: 11px !important;
     line-height: 22px !important; padding-left:0px !important;}
-.courage_post_content p{font-size:15px;}
+.courage_post_content p{font-size:15px; line-height:18px;}
 .courage_post_care{background:none !important; padding-left:0px !important;;}
 .courage_post_care a.button{background:#1daaee !important; border:none!important; color:#ffffff!important; width:85px; height:29px; line-height:22px;display:block;}
 .courage_post_care .users-who-like{display:none;}
@@ -1142,8 +1150,9 @@ span.highlight {
 .courage_comments a.ac-reply-cancel{  float: right;
   margin-right: 15px;
   margin-top: 3px;}
-  #buddypress .acomment-options { float: left;margin: -10px 0 15px 60px !important;}
- .courage_post_foot_sub_talk a.acomment-reply{  font-size: 16px !important; width: 100px; display: block;}
+ #buddypress .acomment-options { float: left;margin: 0px 0 0px 0px !important; position:absolute; bottom:0px; left:0px;}
+ #buddypress .acomment-options .courage_post_foot_enc{margin-bottom:0px !important; padding: 0px !important;}
+ .courage_post_foot_sub_talk a.acomment-reply{  font-size: 16px !important; width: 100px; display: block;color:#6a7b8b; font-size:16px;}
 .courage_post_form_box .bpfb_actions_container{  position: absolute;z-index:9999;
   right: 60px;
   bottom: -52px;
@@ -1153,13 +1162,13 @@ span.highlight {
 .courage_post_form_box #whats-new-avatar img{  width: auto;
   height: 100%;}
 .courage_post_form_box #whats-new-textarea textarea{  height: 30px;outline: none !important;}
-.courage_post_form_box #whats-new-content{margin-left: 40px !important;}
+.courage_post_form_box #whats-new-content{margin-left: 30px !important;padding: 8px 0 0 0 !important; margin-bottom: 2px !important; }
 .courage_post_form_box #whats-new-options{position: absolute;right: 0px;bottom: -45px;}
 .courage_post_form_box #whats-new-submit input[type="submit"]{background: #1daaee !important;
   border-radius: 4px;
   color: #ffffff !important;border: none !important;}
 .courage_post_foot_sub_talk{width: 98px;}
-.courage_post_foot_sub_share{  width: 98px;position: relative;text-align: left;}
+.courage_post_foot_sub_share{  width: 60px;position: relative;text-align: left;}
 .courage_post_foot_sub_share .lr_horizontal_share{  background: none!important;
   width: 98px;
   position: absolute;
@@ -1167,9 +1176,9 @@ span.highlight {
   left: 0px;
   margin-left: 0px;
   height: 35px;}
-.courage_post_foot_sub_share .lrshare_simpleshareimage16{background: none!important;width: 98px; height: 35px; cursor:pointer;}
+.courage_post_foot_sub_share .lrshare_simpleshareimage16{background: none!important;width: 70px; height: 35px; cursor:pointer;}
 .courage_post_foot_sub_share  span.icon-share-on-social:after{  font-size: 16px !important;
-  color: #777;
+  color: #6a7b8b; font-size:16px;
   content: 'share';
   position: relative;
   top: -5px;
@@ -1182,7 +1191,7 @@ span.highlight {
 .rare_flyout_open{width:0px;visibility:hidden; height:0px;-webkit-transition: width 1s linear; transition: width 1s linear;padding: 16px 20px 16px;}
 .slide-right{width:25px; height:20px; background:url(../images/flyout-icon.png) no-repeat !important; z-index:9999;border:none !important; }
 .slideEffect{width:100%;visibility:visible;height:auto;}
-.bpfb_toolbar_container{padding-right:20px;}
+.bpfb_toolbar_container{padding-right: 12px !important;}
 ul.rare-list li { padding: 10px 0 10px 44px !important;}
 .courage_comment_date{width:auto !important;}
 .bpfb_controls_custom{
@@ -1209,13 +1218,14 @@ ul.rare-list li { padding: 10px 0 10px 44px !important;}
  
   
 
-#buddypress .courage_post_form_box form#whats-new-form textarea{height:30px ;line-height:12px !important;font-size:14px;padding: 3px 6px;}
-#buddypress .acomment-options{height:20px;}
+#buddypress .courage_post_form_box form#whats-new-form textarea{height:30px ;line-height:12px !important;font-size:14px;padding: 3px 6px 28px 6px;width:99% !important;overflow:hidden !important;}
+#buddypress .acomment-options{height:20px; color: #143b38;font-size: 13px;}
+#buddypress .acomment-options a{color: #143b38 !important; font-size: 13px !important; line-height:20px !important;}
 
 
-#bpfb_link_preview_url{width:268px !important;}
-#bpfb_video_url{width:268px !important;}
-#buddypress div.activity-comments{margin:0px !important;width:100% !important;}
+#bpfb_link_preview_url{width:263px !important;}
+#bpfb_video_url{width:263px !important;}
+#buddypress div.activity-comments{margin:0px !important;width:100% !important;overflow: visible !important;}
 
 
 .courage_post_content iframe{width:100% !important;height:450px !important;}
@@ -1322,6 +1332,7 @@ span.bpfb_thumbnail_chooser_label{display:none !important;}
     position: absolute;
     top: 0;
 }
+
 div#TB_secondLine {
     display: none !important;
 }
@@ -1329,7 +1340,13 @@ span.screen-reader-text {
     display: none !important;
 }
 #TB_window img#TB_Image{border:none !important;}
-
+#buddypress div.activity-comments form textarea{background: #fafafa none repeat scroll 0 0!important;
+    border: 1px solid #ddd!important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #888;
+    padding: 5px!important;}
+	#buddypress div.activity-comments form .ac-textarea{border: none !important;}
+#buddypress div.activity-comments form div.ac-reply-content a.ac-reply-cancel{line-height: 35px;}
 
 @media screen and (max-width:1124px) {
     .courage_comment_content{width:70% !important;}
