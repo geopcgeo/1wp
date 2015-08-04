@@ -1348,6 +1348,8 @@ span.screen-reader-text {
 	#buddypress div.activity-comments form .ac-textarea{border: none !important;}
 #buddypress div.activity-comments form div.ac-reply-content a.ac-reply-cancel{line-height: 35px;}
 
+.pp_bucket_img img{width:100 !important;}
+
 @media screen and (max-width:1124px) {
     .courage_comment_content{width:70% !important;}
 	.acomment-options .courage_post_foot_enc{width:85px !important;}

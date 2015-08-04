@@ -25,10 +25,7 @@ get_header(); ?>
 							
 							
 							
-							
-							
-							
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/rareCurate-header.png" border="0"/>
+							 <img src="<?php echo get_template_directory_uri(); ?>/images/rareCurate-header.png" border="0"/>
                             </div>
                             <div class="rareCurate_nav">
                             	<div class="clinical_searchbox">
